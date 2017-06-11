@@ -3,15 +3,13 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { ApolloModule } from "apollo-angular";
-
 import { AppComponent } from "./app.component";
-import { FeedComponent } from "./feed.component";
-import { NewPostComponent } from "./new-post.component";
+import { FeedComponent } from "./list.component";
 import { routes } from "./routes";
 import { provideClient } from "./client";
 
 @NgModule({
-  declarations: [AppComponent, FeedComponent, NewPostComponent],
+  declarations: [AppComponent, FeedComponent],
   entryComponents: [AppComponent],
   imports: [
     BrowserModule,
